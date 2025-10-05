@@ -386,3 +386,7 @@ input:focus, textarea:focus, select:focus{
   .process{ grid-template-columns:1fr; }
   .benefits{ grid-template-columns:1fr; }
 }
+
+/* Optional: raise chat bubble if something overlaps it */
+chat-widget { z-index: 999999 !important; }
+
