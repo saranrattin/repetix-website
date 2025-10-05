@@ -387,6 +387,45 @@ input:focus, textarea:focus, select:focus{
   .benefits{ grid-template-columns:1fr; }
 }
 
-/* Optional: raise chat bubble if something overlaps it */
-chat-widget { z-index: 999999 !important; }
+/* Chat widget */
+<style>
+/* Minimal chat widget styling */
+
+.n8n-chat-button {
+  background: #667eea !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.n8n-chat-button:hover {
+  transform: scale(1.05) !important;
+}
+
+.n8n-chat-window {
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+.n8n-chat-header {
+  background: #667eea !important;
+}
+
+.n8n-chat-message-user {
+  background: #667eea !important;
+  border-radius: 16px 16px 4px 16px !important;
+}
+
+.n8n-chat-message-bot {
+  background: #f1f3f5 !important;
+  border-radius: 16px 16px 16px 4px !important;
+}
+
+.n8n-chat-input {
+  border-radius: 20px !important;
+}
+
+.n8n-chat-send-button {
+  background: #667eea !important;
+  border-radius: 50% !important;
+}
+</style>
 
