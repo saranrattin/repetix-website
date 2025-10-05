@@ -388,37 +388,54 @@ input:focus, textarea:focus, select:focus{
 }
 
 /* Chat widget */
-<style>
-/* Minimal n8n chat widget styling */
-
-.chat-window-toggle {
-  background: #667eea !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-  transition: transform 0.2s !important;
-}
-
-.chat-window-toggle:hover {
-  transform: scale(1.05) !important;
-}
-
-.chat-window {
+#n8n-chat .chat-window-wrapper {
   border-radius: 12px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
   overflow: hidden !important;
 }
 
-.chat-header {
-  background: #667eea !important;
-  color: white !important;
+#n8n-chat .chat-window {
+  border-radius: 12px !important;
 }
 
-.chat-body {
+#n8n-chat .chat-header {
+  background: #667eea !important;
+  color: white !important;
+  padding: 16px !important;
+}
+
+#n8n-chat .chat-body {
   background: #f8f9fa !important;
 }
 
-.chat-footer {
+#n8n-chat .chat-message {
+  margin: 8px 0 !important;
+}
+
+#n8n-chat .chat-message-from-bot {
+  background: white !important;
+  border-radius: 16px 16px 16px 4px !important;
+  padding: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+#n8n-chat .chat-message-markdown {
+  color: #2d3748 !important;
+}
+
+#n8n-chat .chat-footer {
   background: white !important;
   border-top: 1px solid #e9ecef !important;
+  padding: 12px !important;
 }
-</style>
 
+#n8n-chat .chat-input {
+  border-radius: 20px !important;
+  border: 2px solid #e9ecef !important;
+  padding: 10px 16px !important;
+}
+
+#n8n-chat .chat-input:focus {
+  border-color: #667eea !important;
+  outline: none !important;
+}
