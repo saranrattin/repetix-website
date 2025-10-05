@@ -389,25 +389,40 @@ input:focus, textarea:focus, select:focus{
 
 /* Chat widget - Override n8n variables */
 #n8n-chat {
-  --chat--color-primary: #667eea !important;
-  --chat--color-primary-shade-50: #5568d3 !important;
-  --chat--color-primary-shade-100: #4a5dc4 !important;
-  --chat--color-secondary: #764ba2 !important;
+  --chat--color-primary: #000000 !important;
+  --chat--color-primary-shade-50: #1a1a1a !important;
+  --chat--color-primary-shade-100: #333333 !important;
+  --chat--color-secondary: #000000 !important;
   --chat--color-white: #ffffff !important;
-  --chat--color-light: #f8f9fa !important;
-  --chat--color-light-shade-50: #e9ecef !important;
-  --chat--color-light-shade-100: #dee2e6 !important;
-  --chat--border-radius: 12px !important;
-  --chat--window-width: 400px !important;
-  --chat--window-height: 600px !important;
-  --chat--spacing: 12px !important;
+  --chat--color-light: #f5f5f5 !important;
+  --chat--color-light-shade-50: #e0e0e0 !important;
+  --chat--color-light-shade-100: #cccccc !important;
+  --chat--toggle--background: #000000 !important;
+  --chat--toggle--hover--background: #333333 !important;
+  --chat--message--bot--background: #f5f5f5 !important;
+  --chat--message--bot--color: #000000 !important;
+  --chat--message--user--background: #000000 !important;
+  --chat--message--user--color: #ffffff !important;
 }
 
-#n8n-chat .chat-window-wrapper {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+#n8n-chat .chat-header {
+  padding: 12px 16px !important;
+  min-height: auto !important;
 }
 
-#n8n-chat .chat-message-from-bot {
-  background: white !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+#n8n-chat .chat-heading {
+  font-size: 16px !important;
+}
+
+#n8n-chat .chat-heading p {
+  font-size: 14px !important;
+  margin: 2px 0 0 0 !important;
+}
+
+#n8n-chat .chat-message {
+  font-size: 14px !important;
+}
+
+#n8n-chat .chat-window {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
 }
