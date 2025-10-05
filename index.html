@@ -203,14 +203,15 @@
 </section>
 
 
-    <!-- GHL chat widget -->
-<chat-widget
-  location-id="yl4egUqpTmcX4lrvUtqX">
-</chat-widget>
- <script
-  src="https://widgets.leadconnectorhq.com/loader.js" 
-  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" >
- </script>
+    <!-- Chat widget -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://n8n.mamacorp.cfd/webhook/c41e19ef-dbc4-4264-a91c-d38b8c563eb9/chat'
+	});
+</script>
 
 
   <!-- Footer -->
